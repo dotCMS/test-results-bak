@@ -99,9 +99,9 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 <div class="alert">
 
 
-<!-- <span class="failingAlert bar">Failed 2 specs</span> -->
+<!-- <span class="failingAlert bar">Failed 1 specs</span> -->
 <span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>1564 specs, 2 failed, 28 pending</span>
+  <a href="#" onclick="unfold();">Unfold</a></span>1564 specs, 1 failed, 28 pending</span>
 <span class="resultsMenu bar">
 <a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
    class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
@@ -6092,7 +6092,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     
     </div>
   
-    <div class="suite failed">
+    <div class="suite passed">
       <span class="description">DotTextareaContentComponent</span>
     
       <div class="specSummary passed">
@@ -6123,7 +6123,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
       <span class="description">should show only the valid options we passed in the select mode butons</span>
       </div>
     
-      <div class="specSummary failed">
+      <div class="specSummary passed">
       <span class="description">should show by default the first mode we passed</span>
       </div>
     
@@ -8650,15 +8650,6 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
   <div class="specDetail failed">
-    <span class="description">DotTextareaContentComponent should show by default the first mode we passed</span>
-    <div class="stackTrace">
-      <div class="resultMessage">Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.--Pendng async tasks are: [type: macroTask, source: setTimeout, args: {isPeriodic:false,delay:1000,args:[object Arguments],__creationTrace__:[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],handleId:4998}]</div>
-    </div>
-  </div>
-  
-  
-  
-  <div class="specDetail failed">
     <span class="description">DotPersonaSelectorComponent should dot-persona-selector-option template with right params</span>
     <div class="stackTrace">
       <div class="resultMessage">Expected undefined to be true.
@@ -8681,7 +8672,7 @@ document.body.onkeypress = function (e) {
   switch (e.keyCode) {
     case 102: toggleFold(); break;
     case 49: showSummary(); break;
-    case 50: showFailures(); break;case 50: showFailures(); break;
+    case 50: showFailures(); break;
   }
 };
 
