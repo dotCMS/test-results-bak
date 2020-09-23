@@ -2,7 +2,7 @@ name: Cleans Projects Directory
 
 on:
   schedule:
-    - cron:  '0 0 1,15 * *' # At 00:00 on day-of-month 1 and 15.
+    - cron:  '0 0 * * *' # Every day at 00:00.
 
 jobs:
   env:
@@ -11,14 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ivorpad/remove-rf@main
-        with:
-          path: projects
+      - name: Remove old files
+        run: |
+          find projects/{core,core-web}/* -mtime +15 -exec rm -rf {} \;
       - name: Commit files
         continue-on-error: true
         run: |
           git config --local user.email "${GITHUB_USER}@dotcms.com"
           git config --local user.name "${GITHUB_USER}"
           git add -A
-          git commit -m "Removing projects directory"
+          git commit -m "Removing old directories"
           git push origin HEAD:${GITHUB_REF}
