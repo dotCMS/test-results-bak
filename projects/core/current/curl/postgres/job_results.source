@@ -1,5 +1,5 @@
 TEST_TYPE=Curl
 DATABASE_TYPE=postgres
 TEST_TYPE_RESULT=FAIL
-COMMIT_TEST_RESULT_URL=https://raw.githack.com/dotCMS/test-results/master/projects/core/ad1408ca/curl/postgres/reports/html/index.html
+COMMIT_TEST_RESULT_URL=https://raw.githack.com/dotCMS/test-results/master/projects/core/f52d2567/curl/postgres/reports/html/index.html
 BRANCH_TEST_RESULT_URL=https://raw.githack.com/dotCMS/test-results/master/projects/core/current/curl/postgres/reports/html/index.html
